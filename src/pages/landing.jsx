@@ -18,7 +18,7 @@ function Landing()
   </div>
   <div className="flex justify-between gap-7 my-5 flex-wrap">
   <Card color={"#8272DA"} title={"23°"} subtitle={"Tirunelveli"}></Card>
-  <Card color={"#FB6663"} title={"December 20"} subtitle={"14:20:55"}></Card>
+  <Card color={"#FB6663"} title={"December 20"} subtitle={"20:20:55"}></Card>
   <Card color={"#FCA201"} title={"Built Using"} subtitle={"React"}></Card>
   </div>
 
