@@ -6,25 +6,25 @@ function Login(props)
     const navigate=useNavigate()
     const[eusername,seteusername]=useState()
     const[epassword,setepassword]=useState()
-    const[ruser,setruser]=useState(true)
+    const[ruser,setruser]=useState(true)     //Initial ah true so we get us I will help you mnage activities
     const users=props.users
     const setusers=props.setusers
 function checkuser()
 {
-    var userfound=false
-    users.forEach(function(item)
+    var userfound=false                     //DECLARE userfound as false
+    users.forEach(function(item)            //Checks each Users item
     {
         if(item.username === eusername && item.password === epassword)
         {
-            console.log("Login Sucessful")
-            userfound=true
-            navigate("/landing",{state: {user:eusername}})
+            console.log("Login Sucessful")                            //if user in user array and entered are same login sucessful
+            userfound=true                                            //User found true
+            navigate("/landing",{state: eusername})                  //IMPORTANT : Navigate to Landing Page hi {name}, navigate the username by using STATE
         }
     })
     if(userfound===false)
     {
-        console.log("Login Failed")
-        setruser(false)
+        console.log("Login Failed")                                  //if user in user array and entered are not same login fail
+        setruser(false)                                              // setruser false
     }
 }
 

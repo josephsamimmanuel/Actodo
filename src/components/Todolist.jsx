@@ -7,7 +7,7 @@ function Todolist(props)
     const activity=props.activityArr
     const setactivity=props.setactivityArr
     return(
-        <div className="bg-[#BDB4EA] border rounded p-1 flex-grow">
+        <div className="bg-[#BDB4EA] border rounded p-1 px-3 flex-grow">
         <h1 className="t text-2xl font-medium">Today's Activity</h1>
         
         {activity.length===0?<p>You have not added anything yet</p>:""}
