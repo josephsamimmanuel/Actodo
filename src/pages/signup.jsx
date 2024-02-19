@@ -26,8 +26,8 @@ function adduser()
     navigate("/")
 }
     return(
-        <div className=" bg-black p-10">
-            <div className=" bg-[rgb(239,239,239)] p-10 border rounded">
+        <div className=" bg-[rgb(255,255,255)] flex flex-col  justify-center items-center h-screen">
+        <div className=" bg-[rgb(255,255,255)] border-solid border-[#EDEEF0] border-4 rounded-3xl flex flex-col justify-center items-center h-80 w-96">
                 <h1 className=" text-3xl font-medium">Hey Hi</h1>
                 <p>Sign Up here :)</p>
                

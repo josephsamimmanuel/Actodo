@@ -1,3 +1,6 @@
+//Contain activityArr array with 3 id and activity,Main big container
+// containing addTodoform(left) and Todolist(right)
+
 import { useState } from "react"
 import Addtodoform from "./addTodoform"
 import Todolist from "./Todolist"

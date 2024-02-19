@@ -1,3 +1,6 @@
+// p tag containing(index,activity,deletebutton)
+// this component belongs to Todolist
+
 function Todoitem(props)
 {
     const activity=props.activityArr

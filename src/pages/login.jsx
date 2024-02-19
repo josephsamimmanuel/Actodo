@@ -39,18 +39,18 @@ function handlepassword(event)
 }
 
     return(
-        <div className=" bg-black p-10">
-            <div className=" bg-[rgb(239,239,239)] p-10 border rounded">
-                <h1 className=" text-3xl font-medium">Hey Hi</h1>
-                {ruser?<p>I help you manage your activities after you login</p>:<p className=" text-red-500">Please SignUp before Login</p>}
+        <div className=" bg-[rgb(255,255,255)] flex flex-col  justify-center items-center h-screen">
+            <div className=" bg-[rgb(255,255,255)] border-solid border-[#EDEEF0] border-4 rounded-3xl flex flex-col justify-center items-center h-80 w-96">
+                <h1 className=" text-3xl font-medium py-1">Hey Hi</h1>
+                {ruser?<p className=" py-1">I help you manage your activities after you login</p>:<p className=" text-red-500 py-1">Please SignUp before Login</p>}
                 
                
-                <div className=" flex flex-col gap-2 my-2">
+                <div className=" flex flex-col gap-2 my-2 py-1">
                 <input type="text" className=" w-52 border border-black p-1 bg-transparent rounded-md" placeholder="Username" onChange={handleuser}/>
                 <input type="text" className=" w-52 border border-black p-1 bg-transparent rounded-md" placeholder="Password" onChange={handlepassword}/>
                 {/* <input type="text" className=" w-52 border border-black p-1 bg-transparent rounded-md" placeholder="Confirm Password"/> */}
 
-                <button className=" bg-[#8272DA] w-24 p-1 rounded-md" onClick={checkuser}>Login</button>
+                <button className=" bg-[#1B66C9] text-white w-24 p-1 rounded-md" onClick={checkuser}>Login</button>
                 <p>Don't have an account? <Link to={"/signup"} className=" underline">| Sign Up</Link></p>
                 </div>
 

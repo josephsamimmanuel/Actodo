@@ -1,9 +1,11 @@
+//Manage Activities,input box for next activity, Add button
+
 import { useState } from "react"
 
 function Addtodoform(props)
 {
-    const activityArr=props.activityArr
-    const setactivityArr=props.setactivityArr
+    const activity=props.activityArr
+    const setactivity=props.setactivityArr
 
     const[newactivity,setnewactivity]=useState("")
 
@@ -13,7 +15,9 @@ function Addtodoform(props)
     }
     function addactivity()
     {
-        setactivityArr([...activityArr,{id:activityArr.length+1,activity:newactivity}])
+        setactivity([...activity,{id:activity.length+1,activity:newactivity}])
+        console.log(setactivity)
+        setnewactivity("")
     }
     return(
         <div className="flex flex-col gap-3">
